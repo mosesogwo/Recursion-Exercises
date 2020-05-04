@@ -1,5 +1,14 @@
-def reverse
+# A recursive method to reverse a given string
+def reverse(string, i=0)
+  n = string.size
+  return string if i == n / 2
+
+  string[i], string[n - i - 1] = string[n - i - 1], string[i]
+  reverse(string, i + 1)
 end
+
+p reverse('awesome')      #'emosewa'
+p reverse('rithmschool')  # 'loohcsmhtir'
 
 def is_palindrome
 end
