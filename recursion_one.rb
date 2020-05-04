@@ -36,8 +36,17 @@ def recursive_range(num)
   return num + recursive_range(num-1)
 end
 
-p recursive_range(6) #21
-p recursive_range(10) #55 
+# p recursive_range(6) #21
+# p recursive_range(10) #55 
 
-def fib
+# A recursive method to return the nth number in the fibonacci series
+
+def fib(n)
+  return 1 if n == 1 || n == 2
+  return fib(n-1) + fib(n-2)
 end
+
+p fib(4)  #3
+p fib(10) #55
+p fib(28) #317811
+p fib(35) #9227465
