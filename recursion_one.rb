@@ -15,17 +15,29 @@ def factorial(n)
   return n * factorial(n - 1)
 end
 
-p factorial(1) #1
-p factorial(2) #4
-p factorial(4) #24
-p factorial(7) #5040
+# p factorial(1) #1
+# p factorial(2) #4
+# p factorial(4) #24
+# p factorial(7) #5040
 
-
-def product_of_array
+# A recursive method to return the product of all elements of a given array.
+def product_of_array(arr)
+  return 1 if arr.empty?
+  return arr[0] * product_of_array(arr[1..-1])
 end
 
-def recursive_range
+# p product_of_array([1,2,3]) #6
+# p product_of_array([1,2,3,10]) #60
+
+
+# Recursive method that adds up all numbers from zero, to the number passed to it
+def recursive_range(num)
+  return 0 if num == 0
+  return num + recursive_range(num-1)
 end
+
+p recursive_range(6) #21
+p recursive_range(10) #55 
 
 def fib
 end
