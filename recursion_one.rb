@@ -46,7 +46,7 @@ def fib(n)
   return fib(n-1) + fib(n-2)
 end
 
-p fib(4)  #3
-p fib(10) #55
-p fib(28) #317811
-p fib(35) #9227465
+# p fib(4)  #3
+# p fib(10) #55
+# p fib(28) #317811
+# p fib(35) #9227465
